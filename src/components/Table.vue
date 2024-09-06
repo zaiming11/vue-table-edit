@@ -144,7 +144,7 @@
 				let endY = Math.max(this.startY, this.endY)
 				let tableData = this.tableData
 				let selectedCells = []
-				for(let row = 1; row <= tableData.cols; row++) {
+				for(let row = 1; row <= tableData.rows; row++) {
 					for(let col = 1; col <= tableData.cols; col++) {
 						if(row >= startX && row <= endX && col >= startY && col <= endY) {
 							selectedCells.push((row - 1) * this.tableData.cols + col -1)
